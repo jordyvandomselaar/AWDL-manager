@@ -3,7 +3,7 @@
 set -eu
 cd "$(dirname "$0")/.."
 
-LABEL=com.jordyvandomselaar.awdl-manager.helper
+LABEL=app.jordy.awdl-manager.helper
 BIN=/Library/PrivilegedHelperTools/$LABEL
 PLIST=/Library/LaunchDaemons/$LABEL.plist
 

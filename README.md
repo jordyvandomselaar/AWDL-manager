@@ -30,5 +30,5 @@ Removes everything and turns `awdl0` back on.
 ## Logs
 
 ```sh
-log show --last 10m --predicate 'subsystem == "com.jordyvandomselaar.awdl-manager"'
+log show --last 10m --predicate 'subsystem == "app.jordy.awdl-manager"'
 ```

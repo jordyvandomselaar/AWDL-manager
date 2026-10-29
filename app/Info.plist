@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>CFBundleIdentifier</key>
-	<string>com.jordyvandomselaar.awdl-manager</string>
+	<string>app.jordy.awdl-manager</string>
 	<key>CFBundleName</key>
 	<string>AWDL Manager</string>
 	<key>CFBundleExecutable</key>

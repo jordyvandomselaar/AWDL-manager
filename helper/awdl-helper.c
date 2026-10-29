@@ -55,7 +55,7 @@ static void prepare_state(void) {
 }
 
 int main(void) {
-    logger = os_log_create("com.jordyvandomselaar.awdl-manager", "helper");
+    logger = os_log_create("app.jordy.awdl-manager", "helper");
     prepare_state();
 
     ctl = socket(AF_INET, SOCK_DGRAM, 0);

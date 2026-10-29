@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>Label</key>
-	<string>com.jordyvandomselaar.awdl-manager</string>
+	<string>app.jordy.awdl-manager</string>
 	<key>ProgramArguments</key>
 	<array>
 		<string>/Applications/AWDLManager.app/Contents/MacOS/AWDLManager</string>

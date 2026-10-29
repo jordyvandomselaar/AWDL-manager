@@ -3,10 +3,10 @@
 <plist version="1.0">
 <dict>
 	<key>Label</key>
-	<string>com.jordyvandomselaar.awdl-manager.helper</string>
+	<string>app.jordy.awdl-manager.helper</string>
 	<key>ProgramArguments</key>
 	<array>
-		<string>/Library/PrivilegedHelperTools/com.jordyvandomselaar.awdl-manager.helper</string>
+		<string>/Library/PrivilegedHelperTools/app.jordy.awdl-manager.helper</string>
 	</array>
 	<key>RunAtLoad</key>
 	<true/>

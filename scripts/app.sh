@@ -3,7 +3,7 @@
 set -eu
 cd "$(dirname "$0")/.."
 
-LABEL=com.jordyvandomselaar.awdl-manager
+LABEL=app.jordy.awdl-manager
 AGENT="$HOME/Library/LaunchAgents/$LABEL.plist"
 DOMAIN="gui/$(id -u)"
 
