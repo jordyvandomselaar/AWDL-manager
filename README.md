@@ -9,6 +9,7 @@ Click the menu bar icon to turn AWDL on or off. Right-click for Quit.
 - `helper/awdl-helper.c` runs as a root LaunchDaemon from boot. It listens on the routing socket for interface changes and drops `awdl0` the moment macOS brings it up, as long as the mode is `off`.
 - `app/main.swift` is the menu bar app. It starts at login through a LaunchAgent and writes `on` or `off` to `/Library/Application Support/AWDL Manager/mode`.
 - The helper watches that file. The mode survives restarts, so the Mac comes back in the last mode you picked.
+- Turning AWDL on brings `awdl0` up immediately, including when the helper starts with `on` saved; it does not wait for macOS to activate it.
 
 ## Install
 

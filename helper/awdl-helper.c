@@ -1,4 +1,4 @@
-// Keeps awdl0 down while the mode file says "off".
+// Applies the saved AWDL mode immediately and keeps awdl0 down in off mode.
 // Runs as root. Wakes on interface changes (routing socket) and on mode
 // changes (kqueue on the state directory), so there is no polling gap.
 #include <fcntl.h>
@@ -73,15 +73,15 @@ int main(void) {
     kevent(kq, watch, 2, NULL, 0, NULL);
 
     bool on = mode_is_on();
-    if (!on) set_up(false);
+    set_up(on);
 
     char msg[2048];
     for (;;) {
         struct kevent ev;
         if (kevent(kq, NULL, 0, &ev, 1, NULL) < 1) continue;
         if ((int)ev.ident == dir) {
-            bool now = mode_is_on();
-            if (now != on) set_up(on = now);
+            on = mode_is_on();
+            set_up(on);
         } else {
             read(routes, msg, sizeof msg);
             if (!on) set_up(false);
